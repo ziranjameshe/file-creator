@@ -81,6 +81,10 @@ def write_bash_file(file_name):
 
 if __name__ == "__main__":
 
+    print('Creating file ... \n')
+    print('File name : %s\n' %args.file_name)
+    print('File type : %s\n' %args.file_type)
+
     if args.file_type == 'python':
         
         write_python_file(file_name)
@@ -93,5 +97,5 @@ if __name__ == "__main__":
 
         write_bash_file(file_name)
 
-
+    print('File created\n')
 
