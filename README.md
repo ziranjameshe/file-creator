@@ -1,6 +1,6 @@
-# file_creator
+# File Creator
 
-## Description
+## Motivation
 Every time when I need to create a python file, I need to add:
 - `#!/usr/bin/env ipython3` (Shebang), most of the time
 - or `#!/usr/bin/python3`
@@ -17,7 +17,7 @@ This is such a tedious process and I want to automate this. The python script in
 
 1. Clone the repo.
 
-2. Usage
+2. Setup
 ```
 cd file_creator
 ./setup_symbolic_link.sh
@@ -27,7 +27,7 @@ cf -h
 
 ## Example
  - Create a python file with 744
- `cf python python_file.py`
+ ```cf python python_file.py```
   - Create a python file with 644
  `cf python python_file.py -m 644`
   - Create a c file
