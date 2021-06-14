@@ -9,5 +9,5 @@
 cd file_creator
 ./setup_symbolic_link.sh
 
-file_create -h
+cf -h
 ```
