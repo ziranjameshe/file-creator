@@ -3,6 +3,7 @@
 import argparse
 import os
 import sys
+import getpass
 from datetime import datetime
 
 parser = argparse.ArgumentParser()
@@ -30,7 +31,8 @@ def write_python_file(file_name):
 
     file_content = "#!/usr/bin/env ipython3\n\n"
 
-    file_content += "# Author : Ziran James He\n\n"
+    # getpass.getuser() returns the user name for the current user
+    file_content += "# Author : %s\n\n"%getpass.getuser()
 
     file_content += "# Date   : %s\n\n" %datetime.now().strftime("%d/%m/%Y %H:%M:%S")
 
@@ -45,7 +47,8 @@ def write_c_file(file_name):
 
     file_content = "/*\n"
 
-    file_content += "Author : Ziran James He\n\n"
+    # getpass.getuser() returns the user name for the current user
+    file_content += "Author : %s\n\n"%getpass.getuser()
 
     file_content += "Date   : %s\n" %datetime.now().strftime("%d/%m/%Y %H:%M:%S")
 
@@ -60,7 +63,8 @@ def write_bash_file(file_name):
 
     file_content = "#!/usr/bin/bash\n\n"
 
-    file_content += "# Author : Ziran James He\n\n"
+    # getpass.getuser() returns the user name for the current user
+    file_content += "# Author : %s\n\n"%getpass.getuser()
 
     file_content += "# Date   : %s\n\n" %datetime.now().strftime("%d/%m/%Y %H:%M:%S")
 
