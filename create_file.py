@@ -32,7 +32,7 @@ def write_python_file(file_name):
     file_content = "#!/usr/bin/env ipython3\n\n"
 
     # getpass.getuser() returns the user name for the current user
-    file_content += "# Author : %s\n\n"%getpass.getuser()
+    file_content += "# Author : %s\n\n" %getpass.getuser()
 
     file_content += "# Date   : %s\n\n" %datetime.now().strftime("%d/%m/%Y %H:%M:%S")
 
@@ -48,9 +48,9 @@ def write_c_file(file_name):
     file_content = "/*\n"
 
     # getpass.getuser() returns the user name for the current user
-    file_content += "Author : %s\n\n"%getpass.getuser()
+    file_content += "Author : %s\n\n" %getpass.getuser()
 
-    file_content += "Date   : %s\n" %datetime.now().strftime("%d/%m/%Y %H:%M:%S")
+    file_content += "Date   : %s\n"   %datetime.now().strftime("%d/%m/%Y %H:%M:%S")
 
     file_content += "*/\n"
 
@@ -64,7 +64,7 @@ def write_bash_file(file_name):
     file_content = "#!/usr/bin/bash\n\n"
 
     # getpass.getuser() returns the user name for the current user
-    file_content += "# Author : %s\n\n"%getpass.getuser()
+    file_content += "# Author : %s\n\n" %getpass.getuser()
 
     file_content += "# Date   : %s\n\n" %datetime.now().strftime("%d/%m/%Y %H:%M:%S")
 
