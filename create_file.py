@@ -36,6 +36,9 @@ def write_python_file(file_name):
 
     file_content += "# Date   : %s\n\n" %datetime.now().strftime("%d/%m/%Y %H:%M:%S")
 
+    file_content += "\n\n\nif __name__ == '__main__':\n"
+    file_content += "    pass\n"
+
     with open(file_name, "w") as file:
 
         file.write(file_content)
