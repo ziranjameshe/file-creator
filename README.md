@@ -25,7 +25,7 @@ cd file_creator
 cf -h
 ```
 
-cf stands is short for create_file
+cf is short for create_file
 
 ## Example
 - Create a python file with 744
