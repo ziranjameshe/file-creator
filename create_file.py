@@ -64,7 +64,7 @@ def write_c_file(file_name):
 def write_bash_file(file_name):
     '''Write bash file'''
 
-    file_content = "#!/usr/bin/bash\n\n"
+    file_content = "#!/bin/bash\n\n"
 
     # getpass.getuser() returns the user name for the current user
     file_content += "# Author : %s\n\n" %getpass.getuser()
